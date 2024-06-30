@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+
+.card {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    box-shadow: 5px 5px 3px black;
+}
+
+
+
+.product {
+    flex: 1;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.info{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    /* border: 2px solid red; */
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.product-info h3{
+    margin-bottom: 1rem;
+}
+
+.options {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.about-car {
+    width: 75%;
+    line-clamp: 4;
+}
+
+.options button {
+    padding: 0.7rem 1.2rem;
+    font-weight: bold;
+}
+
+.add-to-cart{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-to-cart button{
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+
+button:nth-child(even), .choose-btn{
+    background-color: #2175F5;
+    color: white;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .product {
+        flex: 1;
+    }
+
+    .info {
+        flex: 1;
+    }
+}
+
+
+
+@media screen and (max-width:530px){
+    .info{
+        font-size: 1rem;
+    }
+}
+
+
+
